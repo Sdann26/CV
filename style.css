@@ -3,6 +3,10 @@
   --secondary--color: #3d3d3d;
 }
 
+html {
+  font-size: 20px;
+}
+
 body {
   display: grid;
   grid-template-areas: "header header aside" "main main aside";
