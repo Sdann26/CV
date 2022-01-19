@@ -36,18 +36,17 @@ header p {
 
 aside {
   grid-area: aside;
-  background-color: green;
+  background-color: cornsilk;
 }
 
 main {
   grid-area: main;
+  position: relative;
   padding-left: 8rem;
   line-height: 1.4rem;
-  background-color: cornsilk;
 }
 
 h1, h2 {
-  margin: 0.8em 0;
   color: #100058;
 }
 
@@ -56,16 +55,44 @@ h3, h4, p {
 }
 
 h1 {
+  margin: 0.5em 0;
   font-size: 2.2rem;
 }
 
 h2 {
   position: relative;
+  margin: 1em 0;
   font-size: 1.5rem;
+}
+h2 span {
+  position: absolute;
+  text-align: center;
+  left: -2em;
+  top: -0.3em;
+  width: 1.4em;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
+h2 span i {
+  font-size: 1.2rem;
+  line-height: 1.8em;
+  background-color: var(--primary-color);
+  color: #FFF;
 }
 
 h3 {
   font-size: 1.2rem;
+  position: relative;
+}
+h3 span {
+  position: absolute;
+  left: -2em;
+  top: 0.13em;
+  width: 0.8em;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--primary-color);
 }
 
 ul {
@@ -77,19 +104,13 @@ a {
   color: var(--secondary-color);
 }
 
-span {
+.line {
   position: absolute;
-  text-align: center;
-  left: -2em;
-  top: -0.3em;
-  width: 1.4em;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background-color: var(--primary-color);
-}
-span i {
-  font-size: 1.2rem;
-  line-height: 1.8em;
-  background-color: var(--primary-color);
-  color: #FFF;
+  width: 1px;
+  height: 79%;
+  /* Modificar si se pone mas o menos texto */
+  top: 1em;
+  left: 6em;
+  background-color: var(--secondary-color);
+  opacity: 0.3;
 }
