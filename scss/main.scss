@@ -17,7 +17,7 @@ body{
     grid-template-rows: 8% 92%;
     grid-template-columns: 35% 35% 30%;
     aspect-ratio: 210/297;
-    margin: 1cm;
+    margin: 2cm 1cm; 
     font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
     font-size: 20px;
     color: var(--secondary-color);
@@ -37,18 +37,6 @@ header{
     }
 }
 
-aside{
-    grid-area: aside;
-    background-color: cornsilk;
-}
-
-main{
-    grid-area: main;    
-    position: relative;
-    padding-left: 8rem;
-    line-height: 1.4rem;
-}
-
 h1, h2{
     color: #100058;
 }
@@ -62,57 +50,108 @@ h1{
     margin: 0.5em 0;
     font-size: 2.2rem;
 }
-h2{
+
+main{
+    grid-area: main;    
     position: relative;
-    margin: 1em 0;
-    font-size: 1.5rem;
-    span{
-        position: absolute;
-        text-align: center;
-        left: -2em;
-        top: -0.3em;
-        width: 1.4em;
-        aspect-ratio: 1;
-        border-radius: 50%;
-        background-color: var(--primary-color);
-        i{
-            font-size: 1.2rem;
-            line-height: 1.8em;
+    padding-left: 6.1rem;
+    padding-right: 2em;
+    line-height: 1.4rem;
+
+    h2{
+        position: relative;
+        margin: 1em 0;
+        font-size: 1.5rem;
+        span{
+            position: absolute;
+            text-align: center;
+            left: -2em;
+            top: -0.3em;
+            width: 1.4em;
+            aspect-ratio: 1;
+            border-radius: 50%;
             background-color: var(--primary-color);
-            color: #FFF;
+            i{
+                font-size: 1.2rem;
+                line-height: 1.8em;
+                background-color: var(--primary-color);
+                color: #FFF;
+            }
         }
     }
-}
-h3{
-    font-size: 1.2rem;
-    position: relative;
-    span{
-        position: absolute;
-        left: -2em;
-        top: 0.13em;
-        width: 0.8em;
-        aspect-ratio: 1;
-        border-radius: 50%;
-        background-color: var(--primary-color);
+    h3{
+        font-size: 1.2rem;
+        position: relative;
+        span{
+            position: absolute;
+            left: -2em;
+            top: 0.13em;
+            width: 0.8em;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+        }
     }
-}
-
-
-ul{
-    margin: 0;
-}
-
-a{
-    text-decoration: none;
-    color: var(--secondary-color);
+    
+    
+    ul{
+        margin: 0;
+    }
+    
+    a{
+        text-decoration: none;
+        color: var(--secondary-color);
+    }
 }
 
 .line{
-    position: absolute;
-    width: 1px;
-    height: 79%; /* Modificar si se pone mas o menos texto */
-    top: 1em;
-    left: 6em;
-    background-color: var(--secondary-color);
-    opacity: 0.3;
+    padding-left: 1.9em;
+    border-left: 1px solid hsl(0, 0%, 74%);
+}
+
+
+aside{
+    grid-area: aside;
+    h2{
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin: 1em 0;
+        font-size: 1.5rem;
+        span{
+            display: inline-block;
+            margin-right: 0.6em;
+            width: 1.4em;            
+            text-align: center;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            i{
+                font-size: 1.2rem;
+                line-height: 1.8em;
+                background-color: var(--primary-color);
+                color: #FFF;
+            }
+        }
+    }
+
+    h3{
+        font-size: 1rem;
+        +ul{
+            padding-left: 1.5em;
+        }
+    }
+
+    ul{
+        margin: 0;
+        padding-left: 0;
+        li{
+            padding: .3em 0;
+            list-style: none;
+        }
+    }
+
+    a{
+        text-decoration: none;
+        color: var(--secondary-color);
+    }
 }

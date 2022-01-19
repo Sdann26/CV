@@ -14,7 +14,7 @@ body {
   grid-template-rows: 8% 92%;
   grid-template-columns: 35% 35% 30%;
   aspect-ratio: 210/297;
-  margin: 1cm;
+  margin: 2cm 1cm;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 20px;
   color: var(--secondary-color);
@@ -34,18 +34,6 @@ header p {
   margin: 0.5em 0;
 }
 
-aside {
-  grid-area: aside;
-  background-color: cornsilk;
-}
-
-main {
-  grid-area: main;
-  position: relative;
-  padding-left: 8rem;
-  line-height: 1.4rem;
-}
-
 h1, h2 {
   color: #100058;
 }
@@ -59,12 +47,19 @@ h1 {
   font-size: 2.2rem;
 }
 
-h2 {
+main {
+  grid-area: main;
+  position: relative;
+  padding-left: 6.1rem;
+  padding-right: 2em;
+  line-height: 1.4rem;
+}
+main h2 {
   position: relative;
   margin: 1em 0;
   font-size: 1.5rem;
 }
-h2 span {
+main h2 span {
   position: absolute;
   text-align: center;
   left: -2em;
@@ -74,18 +69,17 @@ h2 span {
   border-radius: 50%;
   background-color: var(--primary-color);
 }
-h2 span i {
+main h2 span i {
   font-size: 1.2rem;
   line-height: 1.8em;
   background-color: var(--primary-color);
   color: #FFF;
 }
-
-h3 {
+main h3 {
   font-size: 1.2rem;
   position: relative;
 }
-h3 span {
+main h3 span {
   position: absolute;
   left: -2em;
   top: 0.13em;
@@ -94,23 +88,58 @@ h3 span {
   border-radius: 50%;
   background-color: var(--primary-color);
 }
-
-ul {
+main ul {
   margin: 0;
 }
-
-a {
+main a {
   text-decoration: none;
   color: var(--secondary-color);
 }
 
 .line {
-  position: absolute;
-  width: 1px;
-  height: 79%;
-  /* Modificar si se pone mas o menos texto */
-  top: 1em;
-  left: 6em;
-  background-color: var(--secondary-color);
-  opacity: 0.3;
+  padding-left: 1.9em;
+  border-left: 1px solid #bdbdbd;
+}
+
+aside {
+  grid-area: aside;
+}
+aside h2 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 1em 0;
+  font-size: 1.5rem;
+}
+aside h2 span {
+  display: inline-block;
+  margin-right: 0.6em;
+  width: 1.4em;
+  text-align: center;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
+aside h2 span i {
+  font-size: 1.2rem;
+  line-height: 1.8em;
+  background-color: var(--primary-color);
+  color: #FFF;
+}
+aside h3 {
+  font-size: 1rem;
+}
+aside h3 + ul {
+  padding-left: 1.5em;
+}
+aside ul {
+  margin: 0;
+  padding-left: 0;
+}
+aside ul li {
+  padding: 0.3em 0;
+  list-style: none;
+}
+aside a {
+  text-decoration: none;
+  color: var(--secondary-color);
 }
