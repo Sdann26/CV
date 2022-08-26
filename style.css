@@ -21,6 +21,19 @@ body {
   color: var(--secondary-color);
 }
 
+.page2 {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-areas: "main main aside" "main main aside";
+  grid-template-rows: 8% 92%;
+  grid-template-columns: 35% 35% 30%;
+  aspect-ratio: 210/297;
+  margin: 2cm 1cm;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  color: var(--secondary-color);
+}
+
 header, aside, main {
   box-sizing: border-box;
 }
