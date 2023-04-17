@@ -10,7 +10,7 @@ Una ves clonado el repositorio ejecutar los siguientes comandos
   gulp
 ```
 
-Este ultimo comando, `gulp`  es para ejecutar el compilador de Sass a CSS con lo cual solo quedaría modificar el `main.scss`
+Este ultimo comando, `gulp`  es para ejecutar el compilador de Sass a CSS con lo cual solo quedaría modificar el `main.scss`. Hay posibilidades de necesitar descargaar globalmente gulp así que leer el link de abajo.
 
 Para mas información sobre gulp en el siguiente [enlance](https://gulpjs.com/docs/en/getting-started/quick-start)
 
