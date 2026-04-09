@@ -113,7 +113,9 @@ main{
         span:nth-child(1){            
             display: inline-block;
             width: 8ch;
-            position: absolute;            
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
             left: -8em;
             font-size: 0.8rem;
             font-weight: normal;
@@ -123,7 +125,8 @@ main{
         span:nth-child(2){
             position: absolute;
             left: calc(-2rem - 0.4em);
-            top: 0.13em;
+            top: 50%;
+            transform: translateY(-50%);
             width: 0.8em;
             aspect-ratio: 1;
             border-radius: 50%;
@@ -142,6 +145,20 @@ main{
     a{
         text-decoration: none;
         color: var(--secondary-color);
+    }
+
+    h3 a{
+        color: var(--primary-color);
+        font-size: 1rem;
+        font-weight: normal;
+    }
+
+    h3.cert{
+        font-size: 1.1rem;
+
+        a, span:not(:nth-child(1)):not(:nth-child(2)){
+            font-size: 1rem;
+        }
     }
 }
 
