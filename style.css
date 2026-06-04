@@ -20,9 +20,18 @@
   --pad-aside:     8mm;
 }
 
+@page {
+  size: A4;
+  margin: 0;
+}
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { font-size: 10pt; }
+html {
+  font-size: 10pt;
+  width: 210mm;
+  height: 297mm;
+}
 
 /* ── LAYOUT BASE (página 1 con header) ── */
 body {
@@ -30,7 +39,8 @@ body {
   color: var(--text);
   background: white;
   width: 210mm;
-  min-height: 297mm;
+  height: 297mm;
+  overflow: hidden;
   display: grid;
   grid-template-columns: 1fr var(--aside-width);
   grid-template-rows: auto 1fr;
@@ -252,7 +262,7 @@ main a { color: var(--accent-light); text-decoration: none; }
 
 /* ── PRINT ── */
 @media print {
-  body { width: 210mm; min-height: 297mm; margin: 0; padding: 0; }
+  html, body { width: 210mm; height: 297mm; margin: 0; padding: 0; }
   a { color: inherit; text-decoration: none; }
   * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }
