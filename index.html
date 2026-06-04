@@ -1,130 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./normalize.css">
-    <link rel="stylesheet" href="./style.css">
-    <title>Currículum Vitae</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>CV — Israel Danilo Blas Salas</title>
 </head>
 <body>
-    <header>
-        <h1>Israel Danilo Blas Salas</h1>
-        <p>Desarrollador Frontend</p>
-    </header>
-    <main>
-        <div class="line">
-            <h2><span><i class="bi bi-chat-left-fill"></i></span> Acerca de mí</h2>
-            <p>Soy Frontend Developer con más de 4 años de experiencia desarrollando aplicaciones web modernas utilizando el ecosistema de React y TypeScript.</p>
-            <p>Me enfoco en construir interfaces robustas, reutilizables y de alto rendimiento, aplicando buenas prácticas de arquitectura de componentes y testing automatizado. Actualmente trabajo como Frontend Web Specialist en Rimac Seguros.</p>
-            <!--  -->
-            <h2><span><i class="bi bi bi-briefcase-fill"></i></i></span>Experiencia Laboral</h2>
-            <h3><span>2024-02 hasta la actualidad</span><span></span>RIMAC Seguros</h3>
-            <h4>Cargo: Frontend Web Specialist</h4>
-            <ul>
-                <li>Desarrollo de componentes reutilizables en React basados en el Design System de Rimac, utilizando patrones de composición y metodología BEM.</li>
-                <li>Participación en la migración progresiva del proyecto de JavaScript a TypeScript, mejorando mantenibilidad y seguridad de tipos.</li>
-                <li>Migración del bundler de Webpack a Vite para optimizar tiempos de desarrollo y construcción.</li>
-                <li>Implementación de testing automatizado con Jest, React Testing Library y Cypress, manteniendo una cobertura superior al 90%.</li>
-                <li>Implementación de comunicación en tiempo real mediante WebSockets en la aplicación SPA.</li>
-                <li><b>Stack:</b> React.js, TypeScript, Zustand, Jest, Cypress, SonarQube y Ant Design</li>
-            </ul>
-            <!--  -->
-            <h3><span>2022-12 hasta 2024-02</span><span></span>Aceroyalty</h3>
-            <h4>Cargo: Analista de Sistemas</h4>
-            <ul>
-                <li>Desarrollo de funcionalidades frontend para el portal del Centro de Monitoreo y Prevención de Rimac Seguros utilizando React.</li>
-                <li>Implementación de mapas interactivos con Leaflet y múltiples plugins especializados (glify, polylinemeasure, draw) para visualización geoespacial.</li>
-                <li>Integración de APIs de Google Maps Platform para funcionalidades avanzadas de geolocalización.</li>
-                <li>Mantenimiento y actualización de dependencias en un proyecto de gran escala (~60k líneas de código).</li>
-                <li>Implementación de pruebas unitarias con Jest y React Testing Library, manteniendo alta cobertura de código junto con SonarQube.</li>
-                <li>Trabajo bajo metodología Scrum utilizando herramientas como Jira.</li>
-                <li><b>Stack:</b> React.js, Redux, Leaflet.js, Less, Jest, SonarQube y Ant Design</li>
-            </ul>
-            <!--  -->
-            <h3><span>2022-02 hasta 2022-12</span><span></span>Arya / Mantra Chat</h3>
-            <h4>Cargo: Desarrollador Frontend</h4>
-            <ul>
-                <li>Desarrollo de funcionalidades para una plataforma de mensajería en tiempo real utilizando React, Next.js y Pusher.js.</li>
-                <li>Implementación de microfrontends basados en iframes para aislar secciones del aplicativo principal.</li>
-                <li>Lideré el desarrollo del sitio web de Urbalima y el rebranding del sitio de Jetour, transformando diseños en Figma a interfaces funcionales.</li>
-                <li>Desarrollo de workflows automatizados con n8n para optimizar tareas de bots y procesos internos.</li>
-                <li><b>Stack:</b> Next.js, React.js, Pusher.js, Redux, Tailwind, Prismic CMS y n8n.io</li>
-            </ul>            
-            <!--  -->
-            <h2><span><i class="bi bi-mortarboard-fill"></i></span>Educación</h2>
-            <h3><span>2015</span><span></span>Ciencia de la Computación</h3>
-            <h4>Universidad Nacional de Ingeniería, Lima</h4>
-            <h3><span>2017-03 / 2017-12</span><span></span>Vicepresidente del Centro de Estudiantes de Ciencias</h3>
-            <p>Gestión y planificación de actividades académicas y culturales</p>
-            <!--  -->
-            <h2><span><i class="bi bi-award"></i></span>Certificados</h2>
-            <h3 class="cert"><span>2021-11</span><span></span>JavaScript Algorithms and Data Structures — <a href="https://www.freecodecamp.org/certification/fccda1f9f41-295c-48d9-9014-36f0b254a432/javascript-algorithms-and-data-structures" target="_blank">freeCodeCamp ↗</a></h3>
-            <h3 class="cert"><span></span><span></span>HTML y CSS a Profundidad — <span style="font-weight:normal">Platzi</span></h3>
-            <h3 class="cert"><span></span><span></span>JavaScript a Profundidad — <span style="font-weight:normal">Platzi</span></h3>
-            <h3 class="cert"><span></span><span></span>Python: Mejora tu desarrollo — <span style="font-weight:normal">Platzi</span></h3>
-            <h3 class="cert"><span></span><span></span>Storybook: Sistemas de Diseño con JavaScript — <span style="font-weight:normal">Platzi</span></h3>
+
+  <header>
+    <h1>Israel Danilo Blas Salas</h1>
+    <p class="header__role">Frontend Web Specialist · React &amp; TypeScript · Design Systems &amp; AI-Assisted Dev</p>
+  </header>
+
+  <main>
+    <div class="line">
+
+      <h2><span><i class="bi bi-chat-left-fill"></i></span>Acerca de mí</h2>
+      <p>Soy Frontend Developer con más de 4 años de experiencia en React y TypeScript. Me considero un arquitecto del frontend: no solo desarrollo interfaces, sino que estructuro la forma en que un equipo trabaja sobre ellas — estableciendo lineamientos claros para que el código sea escalable, mantenible y cumpla con altos estándares de performance, accesibilidad y calidad.</p>
+      <p>En el último año he integrado herramientas de IA — GitHub Copilot, Claude Code y agentes especializados — en mi flujo de trabajo diario para automatizar tareas repetitivas y mantener el foco en decisiones de mayor impacto.</p>
+
+      <h2><span><i class="bi bi-briefcase-fill"></i></span>Experiencia Laboral</h2>
+
+      <div class="entry">
+        <div class="entry__header">
+          <span class="entry__company">RIMAC Seguros y Reaseguros</span>
+          <span class="entry__date">Feb 2024 — Presente</span>
         </div>
-    </main>
-    <aside>
-        <h2><span><i class="bi bi-person-fill"></i></span>Perfil</h2>
-        <h3>Email</h3>
-        <p>sdann_26@hotmail.com</p>
-        <h3>Teléfono</h3>
-        <p>980909973</p>
-        <h3>Github</h3>
-        <p><a href="https://github.com/Sdann26" target="_blank">https://github.com/Sdann26</a></p>
-        <h3>LinkedIn</h3>
-        <p><a href="https://www.linkedin.com/in/danilo-blas/" target="_blank">https://www.linkedin.com/in/danilo-blas/</a></p>
-        <!--  -->
-        <h2><span><i class="bi bi-translate"></i></span>Idiomas</h2>
+        <p class="entry__role">Frontend Web Specialist</p>
         <ul>
-            <li>Español (Nativo)</li>
-            <li>Inglés (Básico)</li>
+          <li>Desarrollo de componentes reutilizables sobre el <strong>RIDE System</strong> (Rimac Design System), un sistema con más de 20 componentes y sistema de tokens propio, siguiendo buenas prácticas de arquitectura frontend y metodología BEM.</li>
+          <li>Migración progresiva del proyecto de <strong>JavaScript a TypeScript</strong>, mejorando la mantenibilidad, seguridad de tipos y calidad general del código.</li>
+          <li>Migración del bundler de <strong>Webpack a Vite</strong>, reduciendo el tiempo de build de 25–30 minutos a menos de 5 minutos — una mejora de más del 80%.</li>
+          <li>Implementación de testing automatizado con <strong>Jest, React Testing Library y Cypress</strong> para garantizar la calidad y estabilidad del código.</li>
+          <li>Implementación de comunicación en tiempo real mediante <strong>WebSockets</strong> en la aplicación SPA.</li>
+          <li>Monitoreo y corrección de alertas en el pipeline CI/CD: vulnerabilidades vía <strong>Dependabot</strong>, análisis estático con <strong>CodeQL y SonarQube</strong>, y builds en Microsoft Azure.</li>
+          <li>Uso de <strong>GitHub Copilot, Claude Code y agentes especializados</strong> para optimizar el flujo de desarrollo.</li>
+          <li><strong>Stack:</strong> React, TypeScript, Zustand, Jest, Cypress, SonarQube, GitHub Actions, Azure</li>
         </ul>
-        <!--  -->
-        <h2><span><i class="bi bi-lightning-fill"></i></span>Habilidades</h2>
+      </div>
+
+      <div class="entry">
+        <div class="entry__header">
+          <span class="entry__company">Aceroyalty</span>
+          <span class="entry__date">Dic 2022 — Feb 2024</span>
+        </div>
+        <p class="entry__role">Analista de Sistemas</p>
         <ul>
-            <li>Liderazgo</li>
-            <li>Trabajo en Equipo</li>
-            <li>Trabajo por Objetivos</li>
-            <li>Mejora continua</li>
-            <li>Compromiso</li>
-            <li>Autodidacta</li>
+          <li>Desarrollo frontend del portal del <strong>Centro de Monitoreo y Prevención de Rimac Seguros</strong>, una plataforma geoespacial con más de 36 capas de datos en tiempo real (Sismos, Emergencias Viales, Temperatura, Oleaje, Nubes, entre otras).</li>
+          <li>Implementación de mapas interactivos con <strong>Leaflet</strong> y plugins especializados (glify, polylinemeasure, draw) para visualización y análisis geoespacial avanzado.</li>
+          <li>Integración de <strong>APIs de Google Maps Platform</strong> para funcionalidades de geolocalización de alta precisión.</li>
+          <li>Mantenimiento y evolución de un proyecto de gran escala (~60k líneas de código), incluyendo actualización de dependencias y deuda técnica.</li>
+          <li>Implementación de pruebas unitarias con <strong>Jest y React Testing Library</strong>, manteniendo alta cobertura junto a SonarQube.</li>
+          <li>Trabajo bajo metodología <strong>Scrum</strong> utilizando Jira para gestión de tareas y sprints.</li>
+          <li><strong>Stack:</strong> React, Redux, Leaflet.js, Less, Jest, SonarQube, Ant Design</li>
         </ul>
-        <!--  -->
-        <h2><span><i class="bi bi-pc-display"></i></span>Softwares</h2>
-        <h3>Lenguajes</h3>
+      </div>
+
+      <div class="entry">
+        <div class="entry__header">
+          <span class="entry__company">Mantra Chat / Arya — Consultora en Innovación Digital</span>
+          <span class="entry__date">Feb 2022 — Dic 2022</span>
+        </div>
+        <p class="entry__role">Desarrollador Frontend</p>
         <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>Sass</li>
-            <li>Less</li>
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-            <li>Python</li>
+          <li>Desarrollo de funcionalidades frontend para una plataforma de mensajería en tiempo real similar a WhatsApp, con <strong>Pusher.js</strong> para gestión de conversaciones en tiempo real.</li>
+          <li>Separación de módulos mediante <strong>microfrontends basados en iframes</strong> para aislar la sección de reportería del aplicativo principal.</li>
+          <li>Dashboards de reportería con <strong>Chart.js</strong> para visualización de métricas de campañas, contactos e interacciones.</li>
+          <li>Lideré el rebranding frontend del sitio de <strong>Jetour</strong> y el desarrollo del sitio de <strong>Urbalima</strong> desde diseño Figma a implementación pixel-perfect.</li>
+          <li>Desarrollo de <strong>workflows automatizados en n8n</strong>: lógica condicional, conexión con servicios externos y recordatorios temporizados.</li>
+          <li>Prototipo de aplicación móvil con <strong>Flutter</strong>.</li>
+          <li><strong>Stack:</strong> Next.js, React, Pusher.js, Redux, Tailwind, Chart.js, n8n, Flutter</li>
         </ul>
-        <h3>Librerias y Herramientas</h3>
-        <ul>            
-            <li>React.js</li>
-            <li>Next.js</li>
-            <li>Tailwind</li>
-            <li>Node.js</li>
-            <li>Gulp.js</li>
-            <li>Redux</li>
-            <li>Zustand</li>
-            <li>Jest / Cypress</li>
-            <li>Bootstrap</li>
-            <li>Figma</li>
-            <li>Visual Studio Code</li>
-        </ul>
-        <h3>Sistemas Operativos</h3>
-        <ul>
-            <li>Windows</li>
-            <li>Linux</li>
-            <li>MacOS</li>
-        </ul>
-    </aside>
+      </div>
+
+    </div>
+  </main>
+
+  <aside>
+
+    <h2><span><i class="bi bi-person-fill"></i></span>Contacto</h2>
+    <h3>Email</h3>
+    <p>sdann_26@hotmail.com</p>
+    <h3>Teléfono</h3>
+    <p>+51 980 909 973</p>
+    <h3>LinkedIn</h3>
+    <p><a href="https://linkedin.com/in/danilo-blas" target="_blank">linkedin.com/in/danilo-blas</a></p>
+    <h3>GitHub</h3>
+    <p><a href="https://github.com/Sdann26" target="_blank">github.com/Sdann26</a></p>
+    <h3>Ubicación</h3>
+    <p>Lima, Perú</p>
+
+    <h2><span><i class="bi bi-translate"></i></span>Idiomas</h2>
+    <ul>
+      <li>Español (Nativo)</li>
+      <li>Inglés (Básico)</li>
+    </ul>
+
+    <h2><span><i class="bi bi-lightning-fill"></i></span>Habilidades Blandas</h2>
+    <ul>
+      <li>Liderazgo técnico</li>
+      <li>Trabajo en equipo</li>
+      <li>Trabajo por objetivos</li>
+      <li>Mejora continua</li>
+      <li>Autodidacta</li>
+    </ul>
+
+    <h2><span><i class="bi bi-pc-display"></i></span>Stack Técnico</h2>
+    <h3>Core</h3>
+    <ul>
+      <li>TypeScript</li>
+      <li>React</li>
+      <li>Next.js</li>
+      <li>Redux / Zustand</li>
+    </ul>
+    <h3>Testing &amp; Calidad</h3>
+    <ul>
+      <li>Jest · RTL · Cypress</li>
+      <li>SonarQube · CodeQL</li>
+      <li>Dependabot</li>
+    </ul>
+    <h3>Tooling &amp; CI/CD</h3>
+    <ul>
+      <li>Vite · GitHub Actions</li>
+      <li>Azure · Git · GitFlow</li>
+    </ul>
+    <h3>IA &amp; Automatización</h3>
+    <ul>
+      <li>GitHub Copilot</li>
+      <li>Claude Code</li>
+      <li>n8n</li>
+    </ul>
+    <h3>UI &amp; Diseño</h3>
+    <ul>
+      <li>Ant Design · Tailwind</li>
+      <li>Sass/Less · Storybook</li>
+      <li>Figma</li>
+    </ul>
+
+  </aside>
+
 </body>
 </html>

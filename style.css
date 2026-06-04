@@ -1,195 +1,258 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+/* =============================================
+   CV — Israel Danilo Blas Salas
+   style.css — compartido por index.html y page2.html
+   ============================================= */
+
 :root {
-  --primary-color: #003d74;
-  --secondary-color: #3d3d3d;
+  --accent:        #2d6a4f;
+  --accent-light:  #40916c;
+  --accent-bar:    #52b788;
+  --text:          #1a1a1a;
+  --text-muted:    #555;
+  --text-light:    #777;
+  --bg-aside:      #f4f4f9;
+  --border-aside:  #e2e2ee;
+  --header-bg:     #1b3a2d;
+  --font-display:  'DM Serif Display', Georgia, serif;
+  --font-body:     'DM Sans', 'Helvetica Neue', sans-serif;
+  --aside-width:   62mm;
+  --pad-main:      12mm;
+  --pad-aside:     8mm;
 }
 
-html {
-  font-size: 16px;
-}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+html { font-size: 10pt; }
+
+/* ── LAYOUT BASE (página 1 con header) ── */
 body {
-  box-sizing: border-box;
+  font-family: var(--font-body);
+  color: var(--text);
+  background: white;
+  width: 210mm;
+  min-height: 297mm;
   display: grid;
-  grid-template-areas: "header header aside" "main main aside";
-  grid-template-rows: 8% 92%;
-  grid-template-columns: 38% 38% 24%;
-  aspect-ratio: 210/297;
-  margin: 2cm 1cm;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 24px;
-  color: var(--secondary-color);
+  grid-template-columns: 1fr var(--aside-width);
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "header header"
+    "main   aside";
 }
 
-.page2 {
-  box-sizing: border-box;
-  display: grid;
-  grid-template-areas: "main main aside" "main main aside";
-  grid-template-rows: 8% 92%;
-  grid-template-columns: 35% 35% 30%;
-  aspect-ratio: 210/297;
-  margin: 2cm 1cm;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 24px;
-  color: var(--secondary-color);
+/* ── LAYOUT página 2 (sin header) ── */
+body.page2 {
+  grid-template-rows: 1fr;
+  grid-template-areas: "main aside";
 }
 
-header, aside, main {
-  box-sizing: border-box;
-}
-
+/* ── HEADER ── */
 header {
   grid-area: header;
-  padding-left: 5rem;
-  color: var(--primary-color);
-}
-header p {
-  font-size: 2rem;
-  margin: 0.5em 0;
+  background: var(--header-bg);
+  color: #fff;
+  padding: 10mm var(--pad-main) 9mm;
+  border-bottom: 3px solid var(--accent-bar);
 }
 
-h1, h2 {
-  color: var(--primary-color);
+header h1 {
+  font-family: var(--font-display);
+  font-size: 21pt;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1.15;
+  margin-bottom: 4px;
 }
 
-h3, h4, p {
-  margin: 0.5em 0;
+.header__role {
+  font-size: 8.5pt;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 0.4px;
 }
 
-h1 {
-  margin: 0.5em 0;
-  font-size: 3rem;
-}
-
+/* ── MAIN ── */
 main {
   grid-area: main;
-  position: relative;
-  padding-left: 5rem;
-  padding-right: 3em;
-  line-height: 1.4;
-}
-main p, main li {
-  font-size: 1.2rem;
-}
-main h2 {
-  position: relative;
-  display: flex;
-  align-items: center;
-  margin: 1em 0;
-  font-size: 1.5rem;
-}
-main h2 span {
-  position: absolute;
-  display: inline-grid;
-  place-content: center;
-  text-align: center;
-  left: calc(-2rem - 0.75em);
-  width: 1.5em;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background-color: var(--primary-color);
-}
-main h2 span i {
-  font-size: 1rem;
-  line-height: 1.8em;
-  background-color: var(--primary-color);
-  color: #FFF;
-}
-main h3 {
-  font-size: 1.5rem;
-  position: relative;
-}
-main h3 span:nth-child(1) {
-  display: inline-block;
-  width: 8ch;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: -8em;
-  font-size: 0.8rem;
-  font-weight: normal;
-  text-align: center;
-}
-main h3 span:nth-child(2) {
-  position: absolute;
-  left: calc(-2rem - 0.4em);
-  top: 50%;
-  transform: translateY(-50%);
-  width: 0.8em;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background-color: var(--primary-color);
-}
-main h4 {
-  font-size: 1.25rem;
-}
-main ul {
-  margin: 0;
-}
-main a {
-  text-decoration: none;
-  color: var(--secondary-color);
-}
-main h3 a {
-  color: var(--primary-color);
-  font-size: 1rem;
-  font-weight: normal;
-}
-main h3.cert {
-  font-size: 1.1rem;
-}
-main h3.cert a, main h3.cert span:not(:nth-child(1)):not(:nth-child(2)) {
-  font-size: 1rem;
+  padding: var(--pad-main);
+  padding-right: 9mm;
 }
 
-.line {
-  padding-left: 2rem;
-  border-left: 1px solid #bdbdbd;
-}
-
+/* ── ASIDE ── */
 aside {
   grid-area: aside;
-  padding-right: 1.5em;
+  background: var(--bg-aside);
+  padding: var(--pad-aside);
+  border-left: 1px solid var(--border-aside);
 }
-aside h2 {
+
+/* ── H2 — títulos de sección ── */
+h2 {
+  font-family: var(--font-body);
+  font-size: 7.5pt;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin-top: 6mm;
+  margin-bottom: 3mm;
+  padding-bottom: 2px;
+  border-bottom: 1.5px solid var(--accent-bar);
   display: flex;
   align-items: center;
-  position: relative;
-  margin: 1em 0;
-  font-size: 1.5rem;
+  gap: 5px;
 }
-aside h2 span {
-  display: inline-block;
-  margin-right: 0.6em;
-  width: 1.4em;
-  text-align: center;
-  border-radius: 50%;
-  background-color: var(--primary-color);
+
+h2:first-child { margin-top: 0; }
+
+h2 span {
+  display: inline-flex;
+  align-items: center;
+  font-size: 9pt;
+  color: var(--accent-light);
 }
-aside h2 span i {
-  font-size: 1.2rem;
-  line-height: 1.8em;
-  background-color: var(--primary-color);
-  color: #FFF;
+
+/* ── BLOQUE DE ENTRADA (experiencia / educación) ── */
+.entry { margin-top: 4mm; }
+
+.entry__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 4mm;
 }
-aside h3 {
-  font-size: 1rem;
+
+.entry__company {
+  font-family: var(--font-display);
+  font-size: 11pt;
+  font-weight: 400;
+  color: var(--text);
+  line-height: 1.2;
 }
-aside h3 + ul {
-  padding-left: 1.5em;
+
+.entry__date {
+  font-family: var(--font-body);
+  font-size: 7.5pt;
+  font-weight: 400;
+  color: var(--text-light);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
-aside p, aside li {
-  font-size: 1.2rem;
+
+.entry__role {
+  font-family: var(--font-body);
+  font-size: 8pt;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--text-muted);
+  margin-top: 1px;
+  margin-bottom: 2.5mm;
 }
-aside ul {
-  margin: 0;
-  padding-left: 0;
+
+/* ── CERTIFICACIONES ── */
+.cert {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 3mm;
+  margin-top: 3mm;
 }
-aside ul li {
-  padding: 0.3em 0;
-  list-style: none;
+
+.cert__name {
+  font-family: var(--font-body);
+  font-size: 8.5pt;
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.4;
 }
-aside a {
+
+.cert__name a {
+  color: var(--text);
   text-decoration: none;
-  color: var(--secondary-color);
+}
+
+.cert__name a:hover { text-decoration: underline; }
+
+.cert__issuer {
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.cert__date {
+  font-family: var(--font-body);
+  font-size: 7.5pt;
+  font-weight: 400;
+  color: var(--text-light);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* ── PÁRRAFOS ── */
+p {
+  font-size: 8.5pt;
+  line-height: 1.6;
+  color: var(--text);
+  margin-bottom: 2mm;
+}
+
+/* ── LISTAS ── */
+ul { list-style: none; padding: 0; margin-bottom: 2mm; }
+
+ul li {
+  font-size: 8.2pt;
+  line-height: 1.55;
+  color: var(--text);
+  padding-left: 9px;
+  margin-bottom: 2.5px;
+  position: relative;
+}
+
+ul li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: var(--accent-bar);
+  font-weight: 700;
+}
+
+/* ── ASIDE — overrides ── */
+aside h2 { font-size: 7pt; margin-top: 5mm; gap: 4px; }
+aside h2:first-child { margin-top: 0; }
+
+aside h3 {
+  font-family: var(--font-body);
+  font-size: 7.5pt;
+  font-weight: 600;
+  color: var(--accent);
+  margin-top: 3mm;
+  margin-bottom: 1px;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+aside p {
+  font-size: 7.8pt;
+  line-height: 1.45;
+  margin-bottom: 1mm;
+  word-break: break-word;
+}
+
+aside ul li { font-size: 7.8pt; }
+
+aside a {
+  color: var(--accent-light);
+  text-decoration: none;
+  word-break: break-word;
+  font-size: 7.5pt;
+}
+
+/* ── MISC ── */
+strong, b { font-weight: 600; }
+main a { color: var(--accent-light); text-decoration: none; }
+
+/* ── PRINT ── */
+@media print {
+  body { width: 210mm; min-height: 297mm; margin: 0; padding: 0; }
+  a { color: inherit; text-decoration: none; }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }
